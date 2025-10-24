@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Es Bubur Kacang Hijau — Resep & Dokumentasi</title>
+  <style>
+    :root {
+      --bg: #fff8f0;
+      --accent: #2f855a;
+      --muted: #6b6b6b;
+      --card: #ffffff;
+      --radius: 14px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    }
+    * { box-sizing: border-box }
+    body { margin: 0; background: var(--bg); color: #222; line-height: 1.6; }
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+    header { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .logo { width: 70px; height: 70px; border-radius: 12px; background: var(--accent); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 1.2rem; }
+
+    h1 { margin: 0; font-size: 1.8rem; color: var(--accent); }
+    nav { background: var(--accent); padding: 10px; margin-top: 20px; border-radius: var(--radius); text-align: center; }
+    nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; cursor: pointer; }
+    nav a:hover { text-decoration: underline; }
+
+    .card { background: var(--card); padding: 20px; margin-top: 20px; border-radius: var(--radius); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 10px; margin-top: 15px; }
+    .gallery img { width: 100%; border-radius: 10px; height: 170px; object-fit: cover; transition: 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+
+    footer { margin-top: 30px; text-align: center; color: var(--muted); }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">EBKH</div>
+      <div>
+        <h1>Es Bubur Kacang Hijau</h1>
+        <p>Minuman tradisional Indonesia yang menyegarkan dan bergizi tinggi.</p>
+      </div>
+    </header>
+
+    <nav>
+      <a onclick="showTab('home')">Home</a>
+      <a onclick="showTab('kelompok')">Kelompok</a>
+      <a onclick="showTab('sejarah')">Sejarah</a>
+      <a onclick="showTab('dokumentasi')">Dokumentasi</a>
+      <a onclick="showTab('proses')">Proses Pembuatan</a>
+      <a onclick="showTab('lokasi')">Lokasi</a>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="card">
+      <h2>Beranda</h2>
+      <p>Es bubur kacang hijau adalah hidangan manis yang terbuat dari kacang hijau rebus, santan, dan gula merah. Biasanya disajikan dengan tambahan es batu untuk memberikan sensasi segar.</p>
+      <img src="foto1.png" alt="Es Bubur Kacang Hijau" style="width:100%;border-radius:12px;margin-top:10px;">
+    </section>
+    
+
+    <!-- KELOMPOK -->
+    <section id="kelompok" class="card hidden">
+      <h2>Kelompok Pembuat</h2>
+      <ul>
+        <li><strong>Nama Kelompok:</strong> Es Hijau Segar</li>
+        <li><strong>Anggota:</strong></li>
+        <ul>
+          <li>Anisa Dea Ditania</li>
+          <li>Imaniar Cantika Dewi</li>
+          <li>Mutiara Ramadhani</li>
+          <li>Sheila Yuliani</li>
+        </ul>
+        <li><strong>Kelas:</strong> XII</li>
+        <li><strong>Proyek:</strong> Website Es Bubur Kacang Hijau</li>
+      </ul>
+      <img src="foto1.png" style="width:100%;border-radius:12px;margin-top:10px;">
+
+      <!-- 🔽 Bagian Data Diri Anggota -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:25px; margin-top:30px;">
+
+        <div style="background:white; display:flex; align-items:center; gap:20px; padding:15px 20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:320px;">
+          <img src="foto12.jpg" alt="Foto Hafis Akrom" style="width:90px; height:90px; border-radius:50%; object-fit:cover; border:3px solid #b3541e;">
+          <div>
+            <h3 style="margin:0; color:#b3541e;">Sheila Yuliani</h3>
+            <p style="margin:3px 0;">TTL: Tegal, 14 Juli 2008</p>
+            <p style="margin:3px 0;">Hobi: Bersepeda</p>
+          </div>
+        </div>
+
+        <div style="background:white; display:flex; align-items:center; gap:20px; padding:15px 20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:320px;">
+          <img src="foto13.jpg" alt="Foto Aldi Arpiansyah" style="width:90px; height:90px; border-radius:50%; object-fit:cover; border:3px solid #b3541e;">
+          <div>
+            <h3 style="margin:0; color:#b3541e;">Imaniar Cantika Dewi</h3>
+            <p style="margin:3px 0;">TTL: Tegal, 4 Maret 2008</p>
+            <p style="margin:3px 0;">Hobi: Runing</p>
+          </div>
+        </div>
+
+        <div style="background:white; display:flex; align-items:center; gap:20px; padding:15px 20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:320px;">
+          <img src="foto14.jpg" alt="Foto Mohammad Abi Aroyan" style="width:90px; height:90px; border-radius:50%; object-fit:cover; border:3px solid #b3541e;">
+          <div>
+            <h3 style="margin:0; color:#b3541e;">Anisa Dea Ditania</h3>
+            <p style="margin:3px 0;">TTL: Tegal, 31 Januari 2008</p>
+            <p style="margin:3px 0;">Hobi: Bersepeda</p>
+          </div>
+        </div>
+
+        <div style="background:white; display:flex; align-items:center; gap:20px; padding:15px 20px; border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width:320px;">
+          <img src="foto15.jpeg" alt="Foto M. Salman Imam" style="width:90px; height:90px; border-radius:50%; object-fit:cover; border:3px solid #b3541e;">
+          <div>
+            <h3 style="margin:0; color:#b3541e;">Mutiara Ramadhani</h3>
+            <p style="margin:3px 0;">TTL: Tegal, 8 September 2008</p>
+            <p style="margin:3px 0;">Hobi: Volly, Membaca</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- SEJARAH -->
+    <section id="sejarah" class="card hidden">
+      <h2>Sejarah</h2>
+      <p>1.Awal Mula Bubur Kacang Hijau
+Sebelum dikenal sebagai minuman dingin, kacang hijau diolah menjadi bubur kacang hijau panas. Bubur ini dibuat dengan cara merebus kacang hijau hingga empuk, lalu dicampur dengan gula merah dan santan.
+Hidangan ini sudah dikenal sejak masa kerajaan-kerajaan Nusantara, terutama di wilayah Jawa dan Sumatera, di mana masyarakat sering menyajikan bubur manis saat acara tertentu seperti selamatan, hajatan, atau buka puasa.
+Bubur kacang hijau dianggap sebagai makanan yang menenangkan dan menyehatkan, cocok untuk anak-anak maupun orang tua.</p>
+<p></p>
+<p>2.Masuknya Es ke Indonesia
+Perubahan besar terjadi pada awal abad ke-20, saat es batu mulai dikenal di Indonesia. Pada masa kolonial Belanda, teknologi pembuatan es dibawa ke kota-kota besar seperti Batavia (Jakarta), Surabaya, dan Medan.
+Awalnya, es hanya bisa dinikmati oleh kalangan bangsawan dan orang Belanda, tetapi lama-kelamaan mulai digunakan oleh masyarakat umum. Dari sinilah muncul berbagai kreasi minuman dingin khas Indonesia — salah satunya adalah “Es Bubur Kacang Hijau.”</p>
+<p>3. Makna dan Nilai Budaya 
+Es bubur kacang hijau bukan hanya makanan biasa, tetapi juga bagian dari identitas kuliner Indonesia. Hidangan ini menggambarkan kreativitas masyarakat dalam memadukan tradisi lama dan pengaruh modern.
+Kacang hijau yang sederhana diolah menjadi makanan bergizi tinggi dan cocok untuk segala usia.
+Selain itu, bubur kacang hijau juga sering menjadi simbol kehangatan, kebersamaan, dan kesederhanaan dalam keluarga.</p>
+    </section>
+
+    <!-- DOKUMENTASI -->
+    <section id="dokumentasi" class="card hidden">
+      <h2>Dokumentasi Pembuatan</h2>
+      <p>Berikut foto-foto kegiatan kelompok saat membuat es bubur kacang hijau:</p>
+      <div class="gallery">
+        <img src="foto3.png" alt="Proses merebus kacang hijau">
+        <img src="foto2.png" alt="Menambahkan santan dan gula merah">
+        <img src="foto7.png" alt="Anggota kelompok menyiapkan bahan">
+        <img src="foto4.png" alt="Mengaduk bubur kacang hijau">
+        <img src="foto5.png" alt="Penyajian es bubur kacang hijau">
+        <img src="foto6.png" alt="Hasil akhir disajikan di meja">
+      </div>
+    </section>
+
+    <!-- PROSES PEMBUATAN -->
+    <section id="proses" class="card hidden">
+      <h2>Bahan-bahan</h2>
+        <li>Kacang Hijaun</li>
+        <li>Air</li>
+        <li>Gula Merah</li>
+        <li>Gula Pasir</li>
+        <li>Daun Pandan</li>
+        <li>Santan Kental</li>
+        <li>Garam</li>
+        <li>Es Serut</li>
+        <li>Roti Tawar</li>
+        <li>Tape</li>
+        <li>Sirup Merah</li>
+         
+        <h2>Proses pembuatan</h2>
+            <li>Rebus kacang hijau
+Cuci bersih kacang hijau, lalu rendam selama 2–3 jam agar cepat empuk. Rebus dengan air hingga mendidih dan kacang hijau mulai pecah.</li>
+<li>Masukkan gula dan daun pandan
+ Setelah kacang hijau empuk, tambahkan gula merah, gula pasir, dan daun pandan. Aduk hingga gula larut dan kuah sedikit mengental.</li>
+ <li>Masak santan
+Di panci lain, rebus santan bersama sejumput garam sambil diaduk terus agar tidak pecah. Setelah mendidih, angkat dan dinginkan.</li>
+<li>Sajikan
+Masukkan bubur kacang hijau ke dalam mangkuk. Tambahkan es serut di atasnya. 
+Siram dengan santan dan sedikit sirup merah bila suka. 
+Tambahkan topping seperti potongan roti tawar atau tape singkong.</li>
+<li>Hasil Akhir:
+Rasanya manis, gurih, dan segar — cocok dinikmati saat cuaca panas.</li>
+      </ol>
+    </section>
+
+    <!-- LOKASI -->
+    <section id="lokasi" class="card hidden">
+      <h2>Lokasi Kami</h2>
+      <p>Tempat pembuatan Es Bubur Kacang Hijau oleh kelompok kami dapat dikunjungi di lokasi berikut:</p>
+      <div style="margin-top:15px;">
+        <iframe 
+          src="https://www.google.com/maps?q=-6.983044,109.145002&hl=id&z=15&output=embed"
+          width="100%" height="400" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <p style="margin-top:10px;">📍 <a href="https://maps.app.goo.gl/Zq96ibFp99fPn3b68" target="_blank">Lihat di Google Maps</a></p>
+    </section>
+
+    <footer>
+      © 2025 Kelompok Es Hijau Segar — Website Es Bubur Kacang Hijau
+    </footer>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('section');
+      tabs.forEach(tab => tab.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
